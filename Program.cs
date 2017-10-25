@@ -6,6 +6,7 @@ namespace LabOne
     {
         static void Main(string[] args)
         {
+            // Greet the user before prompts
             Console.Write("Use this program to calculate the perimeter, area, and volume of any room using the length, width, and height!");
             Console.ReadLine();
 
