@@ -1,0 +1,7 @@
+C:\Users\mmcca\OneDrive\Documents\Visual Studio 2017\Projects\LabOne\LabOne\bin\Debug\LabOne.exe.config
+C:\Users\mmcca\OneDrive\Documents\Visual Studio 2017\Projects\LabOne\LabOne\bin\Debug\LabOne.exe
+C:\Users\mmcca\OneDrive\Documents\Visual Studio 2017\Projects\LabOne\LabOne\bin\Debug\LabOne.pdb
+C:\Users\mmcca\OneDrive\Documents\Visual Studio 2017\Projects\LabOne\LabOne\obj\Debug\LabOne.csprojResolveAssemblyReference.cache
+C:\Users\mmcca\OneDrive\Documents\Visual Studio 2017\Projects\LabOne\LabOne\obj\Debug\LabOne.csproj.CoreCompileInputs.cache
+C:\Users\mmcca\OneDrive\Documents\Visual Studio 2017\Projects\LabOne\LabOne\obj\Debug\LabOne.exe
+C:\Users\mmcca\OneDrive\Documents\Visual Studio 2017\Projects\LabOne\LabOne\obj\Debug\LabOne.pdb
