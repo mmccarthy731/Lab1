@@ -6,11 +6,12 @@ namespace LabOne
     {
         static void Main(string[] args)
         {
-            // Greet the user before prompts
             Console.Write("Use this program to calculate the perimeter, area, and volume of any room using the length, width, and height!");
             Console.ReadLine();
 
-            do
+            bool repeat = true;
+
+            while (repeat)
             {
                 double length = GetValue("Please enter the length (in feet) of the room: ");
                 double width = GetValue("Please enter the width (in feet) of the room: ");
@@ -21,21 +22,15 @@ namespace LabOne
                 double volume = length * width * height;
 
                 Console.WriteLine($"\r\nLength: {length} feet\r\nWidth: {width} feet\r\nHeight: {height} feet\r\n\r\nPerimeter: {perimeter} feet\r\nArea: {area} square feet\r\nVolume: {volume} cubic feet\r\n");
-                bool repeat = TryAgain("Would you like to run the program again? (Yes or No): ");
-                if (!repeat)
-                {
-                    break;
-                }
+                repeat = TryAgain("Would you like to run the program again? (Y or N): ");
             }
-            while (true);
         }
 
         private static double GetValue (string message)
         {
             Console.Write(message);
             string input = Console.ReadLine();
-            double value;
-            bool success = double.TryParse(input, out value);
+            bool success = double.TryParse(input, out double value);
             if (!success || value <= 0)
             {
                 Console.Write("Invalid Entry. ");
@@ -47,12 +42,12 @@ namespace LabOne
         private static bool TryAgain (string message)
         {
             Console.Write(message);
-            string input = Console.ReadLine().ToLower();
-            if (input == "yes")
+            string input = Console.ReadLine().ToUpper();
+            if (input == "Y")
             {
                 return true;
             }
-            else if (input == "no")
+            else if (input == "N")
             {
                 return false;
             }
